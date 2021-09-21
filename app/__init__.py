@@ -10,10 +10,7 @@ def create_app(config_name='development'):
 
     app = Flask(__name__, instance_relative_config=True)
 
-    if config_name is not None:
-        app.config.from_object(app_config[config_name])
-    else:
-        app.config.from_object(app_config['development'])
+    app.config.from_object(app_config[config_name])
     app.config.from_pyfile('config.py')
     bootstrap.init_app(app)
     cors.init_app(app)

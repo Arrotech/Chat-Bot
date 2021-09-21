@@ -18,6 +18,9 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt; 
     - name: Test with pytest
+      env:
+        FLASK_ENV: testing
+        config_name: testing
       run: |
         pytest --cov=app --cov-report=term-missing
     - name: Upload Coverage to Codecov

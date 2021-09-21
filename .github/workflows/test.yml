@@ -33,6 +33,6 @@ jobs:
       uses: akhileshns/heroku-deploy@v3.0.0
       with:
         heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-        heroku_app_name: "flask-api-starter-template"
+        heroku_app_name: "automated-chat-bot"
         heroku_email: "harungachanjagitundu@gmail.com"
         usedocker: true

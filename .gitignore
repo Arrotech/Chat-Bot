@@ -7,4 +7,3 @@ __pycache__/
 postgres-data/
 .env
 migrations/
-develop_flask-api-starter-template.yml
